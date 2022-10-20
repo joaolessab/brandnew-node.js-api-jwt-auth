@@ -14,12 +14,12 @@
 [![GitHub language count ](https://img.shields.io/github/languages/count/joaolessab/brandnew-node.js-api-jwt-auth)](https://img.shields.io/github/languages/count/joaolessab/brandnew-node.js-api-jwt-auth)
 <p>
 
-  <a href="#whats-authentication-and-authorization">What's Authentication and Authorization</a> •
-  <a href="#what-is-jwt">What is JWT</a> •
-  <a href="#project-requirements">Project Requirements</a> •
+  <a href="#-whats-authentication-and-authorization">What's Authentication and Authorization</a> •
+  <a href="#-what-is-jwt">What is JWT</a> •
+  <a href="#-project-requirements">Project Requirements</a> •
   
-  <a href="#how-to-run-this-project-locally">How to: Run this project locally</a> •
-  <a href="#how-to-recreate-this-code-from-scratch-on-your-own">How to: Recreate this code from scratch (on your own)</a>
+  <a href="#-how-to-run-this-project-locally">How to: Run this project locally</a> •
+  <a href="#-how-to-recreate-this-code-from-scratch-on-your-own">How to: Recreate this code from scratch (on your own)</a>
 </p>
 
 <br/>
@@ -31,7 +31,7 @@
 
 <br/>
 
-## What's Authentication and Authorization
+## • What's Authentication and Authorization
 Authentication and authorization are used in security, particularly when it comes to getting access to a system. Yet, there is a significant distinction between gaining entry into a house (authentication) and what you can do while inside (authorization).
 
 ### Authentication
@@ -44,19 +44,19 @@ Authorization is the process of allowing authenticated users access to resources
 
 So, authorization occurs after the system authenticates your identity, granting you complete access to resources such as information, files, databases, funds, places, and anything else. That said, authorization affects your capacity to access the system and the extent to which you can do so.
 
-### What is JWT
+## • What is JWT
 JSON Web Tokens (JWT) are an RFC 7519 open industry standard for representing claims between two parties. For example, you can use jwt.io to decode, verify, and produce JWT.
 
 JWT specifies a compact and self-contained method for communicating information as a JSON object between two parties. Because it is signed, this information can be checked and trusted. JWTs can be signed using a secret (using the HMAC algorithm) or an RSA or ECDSA public/private key combination. In a moment, we’ll see some examples of how to use them.
 
-## Project Requirements
+## • Project Requirements
 Node.js
 
-## How to: Run this project locally
+## • How to: Run this project locally
 1. Open the "app" folder
 2. Run `node server.js`
 
-## How to: Recreate this code from scratch (on your own)
+## • How to: Recreate this code from scratch (on your own)
 1. Open your terminal or favorite code editor
 <!-- Line break -->
 2. Create a directory and initialize:
