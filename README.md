@@ -53,10 +53,10 @@ JWT specifies a compact and self-contained method for communicating information 
 Node.js
 
 ## • How to: Run this project locally
-1. Navigate to the "app" folder
+1. Navigate to the **"app"** folder
 2. Run `npm install`
 3. Run `node server.js`
-4. Open the address: "http://localhost:4001" to test the API;
+4. Open the address: "http://localhost:4001" to test the API
 
 ## • How to: Recreate this code from scratch (on your own)
 1. Open your terminal or favorite code editor
@@ -99,8 +99,9 @@ $ touch app.js index.js config/database.js middleware/auth.js model/user.js
 <!-- Line break -->
 6. Install Dependencies inside the project (**"app"** folder):
 ```bash
-npm install mongoose express jsonwebtoken dotenv bcryptjs
+npm install mongoose express jsonwebtoken dotenv bcryptjs dotenv
 npm install nodemon -D
+npm install nodemon -g
 ```
 <!-- Line break -->
 7. Create a Node.js server and connect your database. **How? Check these file on the repo:**
@@ -110,8 +111,8 @@ npm install nodemon -D
 - ".env" (You need to create this one) in the **"app"** folder
 
 8. To start the server:
-- Edit the **"scripts"** key in the **"package.json"** to look like the same as it is on this repository;
-- Point to the MongoDB connection URL inside the **".env"** file to your actual MongoDB connection;
-- Run `npm run dev`;
-- The server and the database should be running without any crashing;
-
+- Edit the **"scripts"** key in the **"package.json"** to look like the same as it is on this repository
+- Point to the MongoDB connection URL inside the **".env"** file to your actual MongoDB connection. [(Check docs here)](https://www.mongodb.com/docs/atlas/connect-to-database-deployment/#connect-to-a-cluster)
+- Navigate to the **"app"** folder
+- Run `npm run dev`
+- The server and the database should be running without any crashing
