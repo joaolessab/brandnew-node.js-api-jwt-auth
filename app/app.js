@@ -5,6 +5,7 @@ const User = require("./model/user");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const express = require("express");
+const auth = require("./middleware/auth");
 
 const app = express();
 app.use(express.json());
@@ -94,6 +95,10 @@ app.post("/login", async (req, res) => {
     catch (err) {
         console.log(err);
     }
+});
+
+app.post("/welcome", auth, (req, res) => {
+    res.status(200).send("Welcome 🙌 ");
 });
 
 module.exports = app;
