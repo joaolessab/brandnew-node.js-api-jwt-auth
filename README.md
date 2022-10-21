@@ -109,3 +109,7 @@ npm install nodemon -D
 - "database.js"
 - ".env" (You need to create this one) in the **"app"** folder
 
+8. To start our server:
+- Edit the scripts object in our **"package.json"** to look like the same as it is on this repository;
+- Point to the MongoDB connection URL;
+- Run `npm run dev`
