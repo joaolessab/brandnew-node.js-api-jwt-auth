@@ -12,8 +12,8 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/joaolessab/brandnew-node.js-api-jwt-auth)](https://img.shields.io/github/contributors/joaolessab/brandnew-node.js-api-jwt-auth)
 [![GitHub last commit](https://img.shields.io/github/last-commit/joaolessab/brandnew-node.js-api-jwt-auth)](https://img.shields.io/github/last-commit/joaolessab/brandnew-node.js-api-jwt-auth)
 [![GitHub language count ](https://img.shields.io/github/languages/count/joaolessab/brandnew-node.js-api-jwt-auth)](https://img.shields.io/github/languages/count/joaolessab/brandnew-node.js-api-jwt-auth)
-<p>
 
+<p>
   <a href="#-whats-authentication-and-authorization">What's Authentication and Authorization</a> •
   <a href="#-what-is-jwt">What is JWT</a> •
   <a href="#-project-requirements">Project Requirements</a> •
@@ -56,7 +56,7 @@ Node.js
 1. Navigate to the "app" folder
 2. Run `npm install`
 3. Run `node server.js`
-4. Open the address: "http://localhost:3030"
+4. Open the address: "http://localhost:4001" to test the API;
 
 ## • How to: Recreate this code from scratch (on your own)
 1. Open your terminal or favorite code editor
@@ -103,13 +103,15 @@ npm install mongoose express jsonwebtoken dotenv bcryptjs
 npm install nodemon -D
 ```
 <!-- Line break -->
-7. Create a Node.js server and connect your database. How? Check these file on the repo:
+7. Create a Node.js server and connect your database. **How? Check these file on the repo:**
+- "database.js"
 - "app.js"
 - "index.js"
-- "database.js"
 - ".env" (You need to create this one) in the **"app"** folder
 
-8. To start our server:
-- Edit the scripts object in our **"package.json"** to look like the same as it is on this repository;
-- Point to the MongoDB connection URL;
-- Run `npm run dev`
+8. To start the server:
+- Edit the **"scripts"** key in the **"package.json"** to look like the same as it is on this repository;
+- Point to the MongoDB connection URL inside the **".env"** file to your actual MongoDB connection;
+- Run `npm run dev`;
+- The server and the database should be running without any crashing;
+
