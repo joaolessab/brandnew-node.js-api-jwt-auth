@@ -126,4 +126,4 @@ npm install nodemon -g
 - "->/model/user.js"
 
 10. Now, let's create the `user routes` for `register` and `login`. **How? Check this file on the repo:**
-- "->/model/user.js"
+- "app.js"
