@@ -53,11 +53,14 @@ JWT specifies a compact and self-contained method for communicating information 
 Node.js
 
 ## • How to: Run this project locally
-1. Open the "app" folder
-2. Run `node server.js`
+1. Navigate to the "app" folder
+2. Run `npm install`
+3. Run `node server.js`
+4. Open the address: "http://localhost:3030"
 
 ## • How to: Recreate this code from scratch (on your own)
 1. Open your terminal or favorite code editor
+
 <!-- Line break -->
 2. Create a directory and initialize:
 ```bash
@@ -68,6 +71,7 @@ $ cd app
 # Initialize NPM (this will create the "package.json")
 $ npm init -y
 ```
+
 <!-- Line break -->
 3. Create these directories inside the **"app"** folder: 
 - "model"
@@ -76,6 +80,7 @@ $ npm init -y
 ```bash
 $ mkdir model middleware config
 ```
+
 <!-- Line break -->
 4. Inside the **"app"** folder, create these files:
 - "app.js"
@@ -86,6 +91,7 @@ $ mkdir model middleware config
 ```bash
 $ touch app.js index.js config/database.js middleware/auth.js model/user.js
 ```
+
 <!-- Line break -->
 5. Check the directory to see if looks like this image below:
 <img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/project-structure.png" width="275px" height="220px">
@@ -96,3 +102,10 @@ $ touch app.js index.js config/database.js middleware/auth.js model/user.js
 npm install mongoose express jsonwebtoken dotenv bcryptjs
 npm install nodemon -D
 ```
+<!-- Line break -->
+7. Create a Node.js server and connect your database. How? Check these file on the repo:
+- "app.js"
+- "index.js"
+- "database.js"
+- ".env" (You need to create this one) in the **"app"** folder
+
