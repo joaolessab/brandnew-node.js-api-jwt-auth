@@ -182,8 +182,43 @@ MONGO_URI=mongodb+srv://{mongodb_username}:{mongodb_password}@{cluster_url}/?ret
 - Check the image below:
 <img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/node-running.png" width="437px" height="111px">
 
-9. Create the `user model`. **How? Check this file on the repo:**
-- "->/model/user.js"
+9. Create the **user model**:
+- "model/**user.js**" file:
+```bash
+const mongoose = require("mongoose");
 
-10. Now, let's create the `user routes` for `register` and `login`. **How? Check this file on the repo:**
-- "app.js"
+const userSchema = new mongoose.Schema({
+  first_name: { type: String, default: null },
+  last_name: { type: String, default: null },
+  email: { type: String, unique: true },
+  password: { type: String },
+  token: { type: String },
+});
+
+module.exports = mongoose.model("user", userSchema);
+```
+
+10. Now, let's create the `user routes` for `register` and `login`.
+- In the root folder, edit the file: **"app.js"**:
+```bash
+require("dotenv").config();
+require("./config/database").connect();
+
+const User = require("./model/user");
+const express = require("express");
+const app = express();
+
+app.use(express.json());
+
+// Register
+app.post("/register", (req, res) => {
+    // our register logic goes here...
+});
+    
+// Login
+app.post("/login", (req, res) => {
+    // our login logic goes here
+});
+
+module.exports = app;
+```
