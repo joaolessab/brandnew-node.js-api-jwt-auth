@@ -69,7 +69,7 @@ $ cd app
 $ npm init -y
 ```
 <!-- Line break -->
-3. Create the directories inside **"app"** folder: 
+3. Create these directories inside the **"app"** folder: 
 - "model"
 - "middleware"
 - "config"
@@ -77,20 +77,15 @@ $ npm init -y
 $ mkdir model middleware config
 ```
 <!-- Line break -->
-4. Create these files inside the **"app"** folder:
-- "/model/user.js"
-- "/config/database.js"
-- "/middleware/auth.js"
-```bash
-$ touch config/database.js middleware/auth.js model/user.js
-```
-<!-- Line break -->
-5. Create these files on **"root"** folder:
+4. Inside the **"app"** folder, create these files:
 - "app.js"
 - "index.js"
+- "->/model/user.js"
+- "->/config/database.js"
+- "->/middleware/auth.js"
 ```bash
-$ touch app.js index.js
+$ touch app.js index.js config/database.js middleware/auth.js model/user.js
 ```
 <!-- Line break -->
-6. Check the directory to see if looks like this image below:
-<img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/project-structure.png" width="278px" height="295px">
+5. Check the directory to see if looks like this image below:
+<img src="" width="278px" height="295px">
