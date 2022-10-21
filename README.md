@@ -85,7 +85,7 @@ $ mkdir model middleware config
 ```
 
 <!-- Line break -->
-4. Inside the `app` folder, create these files:
+4. Inside the `app` folder, create these **empty** files:
 - "app.js"
 - "index.js"
 - "->/model/user.js"
@@ -107,14 +107,74 @@ npm install nodemon -D
 npm install nodemon -g
 ```
 <!-- Line break -->
-7. Create a Node.js server and connect your database. **How? Check these file on the repo:**
-- "->/config/database.js"
-- "app.js"
-- "index.js"
-- ".env" (You need to create this one) in the `app` folder
+7. Create these files to connect a Node.js server and connect your database
+
+- "config/**database.js**" file:
+```bash
+const mongoose = require("mongoose");
+
+const { MONGO_URI } = process.env;
+
+exports.connect = () => {
+  // Connecting to the database
+  mongoose
+    .connect(MONGO_URI, {})
+    .then(() => {
+      console.log("Successfully connected to database");
+    })
+    .catch((error) => {
+      console.log("database connection failed. exiting now...");
+      console.error(error);
+      process.exit(1);
+    });
+};
+```
+
+- root folder: **"app.js"**:
+```bash
+require("dotenv").config();
+require("./config/database").connect();
+const express = require("express");
+
+const app = express();
+
+app.use(express.json());
+
+// Logic goes here
+
+module.exports = app;
+```
+
+- root folder: **"index.js"**:
+```bash
+const http = require("http");
+const app = require("./app");
+const server = http.createServer(app);
+
+const { API_PORT } = process.env;
+const port = process.env.PORT || API_PORT;
+
+// server listening 
+server.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
+```
+
+-  "app/**.env**" file:
+```bash
+API_PORT=4001
+MONGO_URI=mongodb+srv://{mongodb_username}:{mongodb_password}@{cluster_url}/?retryWrites=true&w=majority
+```
 
 8. To start the server:
-- Edit the `scripts` key in the `package.json` to look like the same as it is on this repository
+- Edit the `scripts` key in the `package.json`:
+```bash
+"scripts": {
+  "start": "node index.js",
+  "dev": "nodemon index.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
+}
+```
 - Point to the MongoDB connection URL inside the `.env` file to your actual MongoDB connection. [(Check docs here)](https://www.mongodb.com/docs/atlas/connect-to-database-deployment/#connect-to-a-cluster)
 - Navigate to the `app` folder
 - Run `npm run dev`
