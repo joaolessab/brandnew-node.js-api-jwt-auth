@@ -93,4 +93,4 @@ $ touch app.js index.js
 ```
 <!-- Line break -->
 6. Check the directory to see if looks like this image below:
-<img src="" width="278px" height="295px">
+<img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/project-structure.png" width="278px" height="295px">
