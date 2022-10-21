@@ -18,7 +18,8 @@
   <a href="#-what-is-jwt">What is JWT</a> •
   
   <a href="#-project-requirements">Project Requirements</a> •
-  <a href="#-how-to-run-this-project-locally">How to: Run this project locally</a>
+  <a href="#-how-to-run-this-project-locally">How to: Run this project locally</a> •
+  <a href="#-Screenshots">Screenshots</a>
 </p>
 
 <br/>
@@ -59,3 +60,11 @@ Node.js
 - The server and the database should be running without any crashing
 - Check the image below:
 <img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/node-running.png" width="437px" height="111px">
+
+## • Screenshots **
+- `http://localhost:4001/register`:
+- Sending Data:
+<img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/api-register-postman.png" width="1348px" height="966px">
+
+- MongoDB:
+<img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/api-register-mongo.png" width="1239px" height="562px">
