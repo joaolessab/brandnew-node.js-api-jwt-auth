@@ -88,4 +88,4 @@ $ touch app.js index.js config/database.js middleware/auth.js model/user.js
 ```
 <!-- Line break -->
 5. Check the directory to see if looks like this image below:
-<img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/project-structure.png" width="228px" height="223px">
+<img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/project-structure.png" width="275px" height="220px">
