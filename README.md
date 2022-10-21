@@ -64,7 +64,7 @@ Node.js
 ## • Screenshots **
 - `http://localhost:4001/register`:
 - Sending Data:
-<img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/api-register-postman.png" width="1348px" height="966px">
+<img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/api-register-postman.png" width="100%" height="80%">
 
 - MongoDB:
-<img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/api-register-mongo.png" width="1239px" height="562px">
+<img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/api-register-mongo.png" width="100%" height="50%">
