@@ -59,7 +59,7 @@ Node.js
 4. Open the address: "http://localhost:4001" to test the API
 - The server and the database should be running without any crashing
 - Check the image below:
-<img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/node-running.png" width="489px" height="171px">
+<img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/node-running.png" width="437px" height="111px">
 
 ## • How to: Recreate this code from scratch (on your own)
 1. Open your terminal or favorite code editor
@@ -120,7 +120,7 @@ npm install nodemon -g
 - Run `npm run dev`
 - The server and the database should be running without any crashing
 - Check the image below:
-<img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/node-running.png" width="489px" height="171px">
+<img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/node-running.png" width="437px" height="111px">
 
 9. Create the `user model`. **How? Check this file on the repo:**
 - "->/model/user.js"
