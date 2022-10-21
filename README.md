@@ -19,7 +19,7 @@
   
   <a href="#-project-requirements">Project Requirements</a> •
   <a href="#-how-to-run-this-project-locally">How to: Run this project locally</a> •
-  <a href="#-Screenshots">Screenshots</a>
+  <a href="#-screenshots">Screenshots</a>
 </p>
 
 <br/>
@@ -61,10 +61,9 @@ Node.js
 - Check the image below:
 <img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/node-running.png" width="437px" height="111px">
 
-## • Screenshots **
-- `http://localhost:4001/register`:
-- Sending Data:
+## • Screenshots
+- Registering User via `http://localhost:4001/register`:
 <img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/api-register-postman.png" width="100%" height="80%">
 
-- MongoDB:
+- View User registered on MongoDB Cluster:
 <img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/api-register-mongo.png" width="100%" height="50%">
