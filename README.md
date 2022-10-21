@@ -65,6 +65,32 @@ Node.js
 $ mkdir app
 # Enter the folder created
 $ cd app
-# Initialize NPM
+# Initialize NPM (this will create the "package.json")
 $ npm init -y
 ```
+<!-- Line break -->
+3. Create the directories inside **"app"** folder: 
+- "model"
+- "middleware"
+- "config"
+```bash
+$ mkdir model middleware config
+```
+<!-- Line break -->
+4. Create these files inside the **"app"** folder:
+- "/model/user.js"
+- "/config/database.js"
+- "/middleware/auth.js"
+```bash
+$ touch config/database.js middleware/auth.js model/user.js
+```
+<!-- Line break -->
+5. Create these files on **"root"** folder:
+- "app.js"
+- "index.js"
+```bash
+$ touch app.js index.js
+```
+<!-- Line break -->
+6. Check the directory to see if looks like this image below:
+<img src="" width="278px" height="295px">
