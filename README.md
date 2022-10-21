@@ -70,3 +70,10 @@ Node.js
 
 ### Getting User info via `http://localhost:4001/login`:
 <img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/api-login-postman.png" width="100%" height="80%">
+
+### Trying to access request without JWT `http://localhost:4001/welcome`:
+<img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/api-welcome-without-token.png" width="100%" height="80%">
+
+
+### Trying to access request with JWT `http://localhost:4001/welcome`:
+<img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/api-welcome-with-token.png" width="100%" height="80%">
