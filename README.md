@@ -1,5 +1,5 @@
 <h1 align='center'>Node.js API with JWT Auth</h1>
-<h4 align='center'>> 🔒 A simple Node.js API that connects to MongoDB, generates and throws back a JWT Token to the final endpoint</h4>
+<h4 align='center'>> 🔒 A simple Node.js API that connects to MongoDB,<br/>generates and throws back a JWT Token to the final endpoint</h4>
 
 <div align="center">
 
@@ -55,7 +55,7 @@ Node.js
 1. Navigate to the `app` folder
 2. Run `npm install`
 3. Run `node server.js`
-4. Open the address: "http://localhost:4001" to test the API
+4. Open the address: `http://localhost:4001` to test the API's call
 - The server and the database should be running without any crashing
 - Check the image below:
 <img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/node-running.png" width="437px" height="111px">
