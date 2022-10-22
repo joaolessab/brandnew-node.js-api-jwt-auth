@@ -52,6 +52,7 @@ JWT specifies a compact and self-contained method for communicating information 
 
 ## • Project Requirements
 1. [Node.js](https://nodejs.org/en/download/) installed
+2. [MongoDB Cluster](https://www.mongodb.com/cloud/atlas/register) connection
 
 ## • How to: Run this project locally
 1. Navigate to the `app` folder
