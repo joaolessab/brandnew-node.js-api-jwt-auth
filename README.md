@@ -54,8 +54,8 @@ JWT specifies a compact and self-contained method for communicating information 
 
 ## • How to: Run this project locally
 1. Navigate to the `app` folder
-2. Run `npm install`
-3. Run `node server.js`
+2. Run: `npm install`
+3. Run: `node server.js`
 4. Open the address: `http://localhost:4001` to test the API's call
 - The server and the database should be running without any crashing
 - Check the image below:
