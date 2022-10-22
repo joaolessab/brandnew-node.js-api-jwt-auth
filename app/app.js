@@ -2,8 +2,8 @@
 require("dotenv").config();
 
 const express = require("express");
-const auth = require("./middlewares/auth");
 const db = require("./config/database");
+const auth = require("./middlewares/auth");
 
 // Creating Express Instance
 const app = express();
