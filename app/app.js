@@ -99,7 +99,7 @@ app.post("/login", async (req, res) => {
 });
 
 // Welcome request to test JWT
-app.post("/welcome", auth, (req, res) => {
+app.get("/welcome", auth, (req, res) => {
     res.status(200).send("Welcome 🙌 ");
 });
 

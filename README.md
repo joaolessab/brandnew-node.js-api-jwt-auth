@@ -15,10 +15,11 @@
 
 <p>
   <a href="#-whats-authentication-and-authorization">What's Authentication and Authorization</a> •
-  <a href="#-what-is-jwt">What is JWT</a> •
-  
+  <a href="#-what-is-jwt">What is JWT</a> •  
   <a href="#-project-requirements">Project Requirements</a> •
+
   <a href="#-how-to-run-this-project-locally">How to: Run this project locally</a> •
+  <a href="#-how-to-run-this-project-locally">API's provided</a> •
   <a href="#-screenshots">Screenshots</a>
 </p>
 
@@ -56,10 +57,17 @@ JWT specifies a compact and self-contained method for communicating information 
 1. Navigate to the `app` folder
 2. Run: `npm install`
 3. Run: `node server.js`
-4. Open the address: `http://localhost:4001` to test the API's call
+4. Open the address: `http://localhost:4001` to test the API calls
 - The server and the database should be running without any crashing
 - Check the image below:
 <img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/node-running.png" width="437px" height="111px">
+
+## • API's Provided
+| Method |               URL               |            Actions            |
+| ------ | ------------------------------- |  ---------------------------- |
+|  POST  | http://localhost:4001/register  |  signup new account           |
+|  POST  | http://localhost:4001/login     |  login an account             |
+|  GET   | http://localhost:4001/welcome   |  Welcome Request Testing JWT  |
 
 ## • Screenshots
 ### - Registering User via: `http://localhost:4001/register`
