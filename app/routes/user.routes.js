@@ -1,8 +1,9 @@
-const userRoutes = (app, auth) => {
+const authJwt = require("../middlewares/authJwt");
+const controller = require("../controllers/user.controller");
+
+const userRoutes = (app) => {
     // Welcome request to test JWT
-    app.get("/welcome", auth, (req, res) => {
-        res.status(200).send("Welcome 🙌");
-    });
+    app.get("/welcome", authJwt, controller.welcome);
 }
 
 module.exports = userRoutes;
