@@ -1,16 +1,17 @@
+// Importing Dependencies
 require("dotenv").config();
 require("./config/database").connect();
-
-const User = require("./model/user");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const express = require("express");
-const auth = require("./middleware/auth");
+const User = require("./models/user");
+const auth = require("./middlewares/auth");
 
+// Creating Express Instance
+const express = require("express");
 const app = express();
 app.use(express.json());
 
-// Register new user
+// Registering New User
 app.post("/register", async (req, res) => {
     try {
         // Gets user input
@@ -60,7 +61,7 @@ app.post("/register", async (req, res) => {
     }
 });
     
-// Login
+// Login with User Created
 app.post("/login", async (req, res) => {
     try {
         // Gets user input
@@ -97,6 +98,7 @@ app.post("/login", async (req, res) => {
     }
 });
 
+// Welcome request to test JWT
 app.post("/welcome", auth, (req, res) => {
     res.status(200).send("Welcome 🙌 ");
 });
