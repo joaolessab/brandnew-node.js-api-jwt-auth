@@ -2,6 +2,7 @@
 require("dotenv").config();
 
 const db = require("./config/database");
+const express = require("express");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const User = require("./models/user");
@@ -11,9 +12,7 @@ const auth = require("./middlewares/auth");
 db.connect();
 
 // Creating Express Instance
-const express = require("express");
 const app = express();
-
 app.use(express.json());
 
 // Registering New User
