@@ -50,7 +50,7 @@ JSON Web Tokens (JWT) are an RFC 7519 open industry standard for representing cl
 JWT specifies a compact and self-contained method for communicating information as a JSON object between two parties. Because it is signed, this information can be checked and trusted. JWTs can be signed using a secret (using the HMAC algorithm) or an RSA or ECDSA public/private key combination. In a moment, we’ll see some examples of how to use them.
 
 ## • Project Requirements
-Node.js
+1. [Node.js](https://nodejs.org/en/download/) installed
 
 ## • How to: Run this project locally
 1. Navigate to the `app` folder
