@@ -55,9 +55,10 @@ JWT specifies a compact and self-contained method for communicating information 
 
 ## • How to: Run this project locally
 1. Navigate to the `app` folder
-2. Run: `npm install`
-3. Run: `node server.js`
-4. Open the address: `http://localhost:4001` to test the API calls
+2. In the file [`.env`](https://github.com/joaolessab/brandnew-node.js-api-jwt-auth/blob/main/app/.env#L2), insert your MongoDB database credentials
+3. Run: `npm install`
+4. Run: `node server.js`
+5. Open the address: `http://localhost:4001` to test the API calls
 - The server and the database should be running without any crashing
 - Check the image below:
 <img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/node-running.png" width="400px" height="100px">
