@@ -19,7 +19,7 @@
   <a href="#-project-requirements">Project Requirements</a> •
 
   <a href="#-how-to-run-this-project-locally">How to: Run this project locally</a> •
-  <a href="#-how-to-run-this-project-locally">API's provided</a> •
+  <a href="#-apis-provided">API's provided</a> •
   <a href="#-screenshots">Screenshots</a>
 </p>
 
