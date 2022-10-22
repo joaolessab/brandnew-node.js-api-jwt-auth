@@ -60,7 +60,7 @@ JWT specifies a compact and self-contained method for communicating information 
 4. Open the address: `http://localhost:4001` to test the API calls
 - The server and the database should be running without any crashing
 - Check the image below:
-<img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/node-running.png" width="437px" height="111px">
+<img src="https://raw.githubusercontent.com/joaolessab/brandnew-node.js-api-jwt-auth/main/repo/node-running.png" width="400px" height="100px">
 
 ## • API's Provided
 | Method |               URL               |            Actions            |

@@ -1,14 +1,19 @@
 // Importing Dependencies
 require("dotenv").config();
-require("./config/database").connect();
+
+const db = require("./config/database");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const User = require("./models/user");
 const auth = require("./middlewares/auth");
 
+// Connecting Database
+db.connect();
+
 // Creating Express Instance
 const express = require("express");
 const app = express();
+
 app.use(express.json());
 
 // Registering New User
