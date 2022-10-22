@@ -65,8 +65,8 @@ JWT specifies a compact and self-contained method for communicating information 
 ## • API's Provided
 | Method |               URL               |            Actions            |
 | ------ | ------------------------------- |  ---------------------------- |
-|  POST  | http://localhost:4001/register  |  signup new account           |
-|  POST  | http://localhost:4001/login     |  login an account             |
+|  POST  | http://localhost:4001/register  |  Signup new account           |
+|  POST  | http://localhost:4001/login     |  Login an account             |
 |  GET   | http://localhost:4001/welcome   |  Welcome Request Testing JWT  |
 
 ## • Screenshots
